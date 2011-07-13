@@ -1,0 +1,2414 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 13 12:07:38 +0800 2011
+Served asset /rails.png - 200 OK  (1ms)  (pid 986)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Wed Jul 13 12:07:48 +0800 2011
+  Processing by Rails::InfoController#properties as */*
+Rendered inline template (1.7ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 13 12:09:10 +0800 2011
+Served asset /rails.png - 304 Not Modified  (1ms)  (pid 1063)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 12:17:46 +0800 2011
+  Processing by PagesController#welcome as HTML
+Rendered pages/welcome.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:17:46 +0800 2011
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (1ms)  (pid 1206)
+Compiled ~/projects/fb/app/assets/stylesheets/pages.css.scss  (1ms)  (pid 1206)
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (0ms)  (pid 1206)
+Served asset /application.css - 200 OK  (6ms)  (pid 1206)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:17:46 +0800 2011
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (21ms)  (pid 1206)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (22ms)  (pid 1206)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 1206)
+Compiled ~/projects/fb/app/assets/javascripts/pages.js.coffee  (326ms)  (pid 1206)
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (0ms)  (pid 1206)
+Served asset /application.js - 200 OK  (389ms)  (pid 1206)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateBoards (20110713041841)
+  [1m[35m (0.3ms)[0m  CREATE TABLE "boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20110713041841')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("boards")[0m
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 12:19:27 +0800 2011
+  Processing by PagesController#welcome as HTML
+Rendered pages/welcome.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:19:27 +0800 2011
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (4ms)  (pid 1293)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (8ms)  (pid 1293)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 1293)
+Compiled ~/projects/fb/app/assets/javascripts/boards.js.coffee  (498ms)  (pid 1293)
+Compiled ~/projects/fb/app/assets/javascripts/pages.js.coffee  (362ms)  (pid 1293)
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (0ms)  (pid 1293)
+Served asset /application.js - 200 OK  (885ms)  (pid 1293)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:19:28 +0800 2011
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (11ms)  (pid 1293)
+Compiled ~/projects/fb/app/assets/stylesheets/boards.css.scss  (4ms)  (pid 1293)
+Compiled ~/projects/fb/app/assets/stylesheets/pages.css.scss  (1ms)  (pid 1293)
+Compiled ~/projects/fb/app/assets/stylesheets/scaffold.css.scss  (22ms)  (pid 1293)
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (0ms)  (pid 1293)
+Served asset /application.css - 200 OK  (52ms)  (pid 1293)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:19:37 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:19:37 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1293)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:19:37 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1293)
+
+
+Started GET "/posts" for 127.0.0.1 at Wed Jul 13 12:19:43 +0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Wed Jul 13 12:19:50 +0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/posts/new"):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 12:19:56 +0800 2011
+  Processing by PagesController#welcome as HTML
+Rendered pages/welcome.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:19:56 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1293)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:19:56 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1293)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:20:01 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:20:01 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1293)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:20:01 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1293)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateBoards (20110713041841)
+Migrating to CreatePosts (20110713042108)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110713042108')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("boards")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+
+
+Started GET "/posts" for 127.0.0.1 at Wed Jul 13 12:21:30 +0800 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+Rendered posts/index.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:21:30 +0800 2011
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (4ms)  (pid 1375)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (7ms)  (pid 1375)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 1375)
+Compiled ~/projects/fb/app/assets/javascripts/boards.js.coffee  (254ms)  (pid 1375)
+Compiled ~/projects/fb/app/assets/javascripts/pages.js.coffee  (222ms)  (pid 1375)
+Compiled ~/projects/fb/app/assets/javascripts/posts.js.coffee  (222ms)  (pid 1375)
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (0ms)  (pid 1375)
+Served asset /application.js - 200 OK  (725ms)  (pid 1375)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:21:31 +0800 2011
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (8ms)  (pid 1375)
+Compiled ~/projects/fb/app/assets/stylesheets/boards.css.scss  (1ms)  (pid 1375)
+Compiled ~/projects/fb/app/assets/stylesheets/pages.css.scss  (0ms)  (pid 1375)
+Compiled ~/projects/fb/app/assets/stylesheets/posts.css.scss  (2ms)  (pid 1375)
+Compiled ~/projects/fb/app/assets/stylesheets/scaffold.css.scss  (8ms)  (pid 1375)
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (0ms)  (pid 1375)
+Served asset /application.css - 200 OK  (28ms)  (pid 1375)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Wed Jul 13 12:21:34 +0800 2011
+  Processing by PostsController#new as HTML
+Rendered posts/_form.html.erb (130.1ms)
+Rendered posts/new.html.erb within layouts/application (201.1ms)
+Completed 200 OK in 205ms (Views: 204.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:21:34 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1375)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:21:34 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1375)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateBoards (20110713041841)
+Migrating to CreatePosts (20110713042108)
+Migrating to AddBoardIdToPost (20110713042912)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "posts" ADD "board_id" integer[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110713042912')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("boards")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+
+
+Started GET "/posts" for 127.0.0.1 at Wed Jul 13 12:31:37 +0800 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:31:37 +0800 2011
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (8ms)  (pid 1488)
+Compiled ~/projects/fb/app/assets/stylesheets/boards.css.scss  (1ms)  (pid 1488)
+Compiled ~/projects/fb/app/assets/stylesheets/pages.css.scss  (0ms)  (pid 1488)
+Compiled ~/projects/fb/app/assets/stylesheets/posts.css.scss  (1ms)  (pid 1488)
+Compiled ~/projects/fb/app/assets/stylesheets/scaffold.css.scss  (6ms)  (pid 1488)
+Served asset /application.css - 304 Not Modified  (25ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:31:37 +0800 2011
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (4ms)  (pid 1488)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (4ms)  (pid 1488)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 1488)
+Compiled ~/projects/fb/app/assets/javascripts/boards.js.coffee  (248ms)  (pid 1488)
+Compiled ~/projects/fb/app/assets/javascripts/pages.js.coffee  (238ms)  (pid 1488)
+Compiled ~/projects/fb/app/assets/javascripts/posts.js.coffee  (242ms)  (pid 1488)
+Served asset /application.js - 304 Not Modified  (748ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:31:44 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 78ms (Views: 75.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:31:44 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:31:44 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 12:32:19 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:32:19 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:32:19 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/new" for 127.0.0.1 at Wed Jul 13 12:32:21 +0800 2011
+  Processing by BoardsController#new as HTML
+Rendered boards/_form.html.erb (73.7ms)
+Rendered boards/new.html.erb within layouts/application (78.5ms)
+Completed 200 OK in 83ms (Views: 82.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:32:21 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:32:21 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:32:22 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:32:22 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:32:22 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:33:04 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:33:04 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:33:04 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/posts" for 127.0.0.1 at Wed Jul 13 12:33:05 +0800 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:33:05 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:33:05 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:33:44 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 90ms (Views: 88.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:33:44 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:33:44 +0800 2011
+Served asset /application.js - 304 Not Modified  (1ms)  (pid 1488)
+
+
+Started GET "/posts" for 127.0.0.1 at Wed Jul 13 12:33:47 +0800 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:33:47 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:33:47 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:34:08 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:34:08 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:34:08 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/posts" for 127.0.0.1 at Wed Jul 13 12:34:09 +0800 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" 
+Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:34:09 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:34:09 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:35:07 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:35:07 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:35:07 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:35:09 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:35:09 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:35:09 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:40:22 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:40:22 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:40:22 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/new" for 127.0.0.1 at Wed Jul 13 12:40:24 +0800 2011
+  Processing by BoardsController#new as HTML
+Rendered boards/_form.html.erb (4.5ms)
+Rendered boards/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:40:24 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:40:24 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/posts" for 127.0.0.1 at Wed Jul 13 12:40:26 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at Wed Jul 13 12:40:29 +0800 2011
+  Processing by BoardsController#new as HTML
+Rendered boards/_form.html.erb (4.4ms)
+Rendered boards/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:40:29 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:40:29 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/new" for 127.0.0.1 at Wed Jul 13 12:40:32 +0800 2011
+  Processing by BoardsController#new as HTML
+Rendered boards/_form.html.erb (4.6ms)
+Rendered boards/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:40:32 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:40:32 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started POST "/boards" for 127.0.0.1 at Wed Jul 13 12:40:33 +0800 2011
+  Processing by BoardsController#create as HTML
+  Parameters: {"commit"=>"Create Board", "authenticity_token"=>"bFuYAyjIxvensFnd44FQf4iQd+PuDEFujfOJeTQCsro=", "utf8"=>"✓", "board"=>{"name"=>"1"}}
+  [1m[35mSQL (12.8ms)[0m  INSERT INTO "boards" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 13 Jul 2011 04:40:33 UTC +00:00], ["name", "1"], ["updated_at", Wed, 13 Jul 2011 04:40:33 UTC +00:00]]
+Redirected to http://localhost:3000/boards/1
+Completed 302 Found in 20ms
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:40:33 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered boards/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 85ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:40:33 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:40:33 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:40:34 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:40:35 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:40:35 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:40:36 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 97ms (Views: 95.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:40:36 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:40:36 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:40:37 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered boards/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:40:37 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:40:37 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:41:19 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered boards/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 70ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:41:19 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:41:19 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:44:05 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:44:05 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:44:05 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:44:06 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:44:06 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:44:06 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:44:07 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+ERROR: compiling _app_views_boards_show_html_erb__1857378141_2178433160 RAISED compile error
+/Users/imac20/projects/fb/app/views/boards/show.html.erb:26: syntax error, unexpected kENSURE, expecting kEND
+/Users/imac20/projects/fb/app/views/boards/show.html.erb:28: syntax error, unexpected $end, expecting kEND
+Function body:           def _app_views_boards_show_html_erb__1857378141_2178433160(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "boards/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <b>Name:</b>
+  ');@output_buffer.append= ( @board.name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<h1>Listing posts</h1>
+<table>
+	<tr>
+		<th>Title</th>
+		<th>Content</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+');	 @posts.each do |post|
+@output_buffer.safe_concat('	<tr>
+		<td>');@output_buffer.append= ( post.title);@output_buffer.safe_concat('</td>
+	</tr>	
+</table>
+
+');@output_buffer.append= ( link_to 'Edit', edit_board_path(@board) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', boards_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/imac20/projects/fb/app/views/boards/show.html.erb:28:in `compile'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/template.rb:190:in `compile!'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/template.rb:143:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/notifications.rb:57:in `instrument'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/template.rb:142:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/template_renderer.rb:40:in `render_template'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/notifications.rb:55:in `instrument'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/notifications.rb:55:in `instrument'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/template_renderer.rb:12:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/streaming.rb:258:in `_render_template'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/abstract_controller/rendering.rb:99:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activerecord-3.1.0.rc1/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/mime_responds.rb:268:in `retrieve_response_from_mimes'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/mime_responds.rb:195:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/mime_responds.rb:195:in `respond_to'
+/Users/imac20/projects/fb/app/controllers/boards_controller.rb:19:in `show'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:416:in `_run__1940905635__process_action__453433196__callbacks'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:386:in `send'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:81:in `send'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/notifications.rb:55:in `instrument'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/notifications.rb:55:in `instrument'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/params_wrapper.rb:202:in `process_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activerecord-3.1.0.rc1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/abstract_controller/base.rb:121:in `process'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal.rb:193:in `dispatch'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_controller/metal.rb:236:in `action'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-mount-0.8.1/lib/rack/mount/route_set.rb:152:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-mount-0.8.1/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-mount-0.8.1/lib/rack/mount/code_generation.rb:96:in `optimized_each'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-mount-0.8.1/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-mount-0.8.1/lib/rack/mount/route_set.rb:141:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/etag.rb:23:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/conditionalget.rb:25:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/session/abstract/id.rb:195:in `context'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/session/abstract/id.rb:190:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/cookies.rb:321:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activerecord-3.1.0.rc1/lib/active_record/query_cache.rb:54:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activerecord-3.1.0.rc1/lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/callbacks.rb:29:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:81:in `send'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/sendfile.rb:102:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/railties-3.1.0.rc1/lib/rails/rack/logger.rb:13:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/runtime.rb:17:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/activesupport-3.1.0.rc1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/lock.rb:34:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/static.rb:53:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/railties-3.1.0.rc1/lib/rails/rack/content_length.rb:16:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/railties-3.1.0.rc1/lib/rails/engine.rb:438:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/railties-3.1.0.rc1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/handler/webrick.rb:59:in `service'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/imac20/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/handler/webrick.rb:13:in `run'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/rack-1.3.0/lib/rack/server.rb:265:in `start'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/railties-3.1.0.rc1/lib/rails/commands/server.rb:70:in `start'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/railties-3.1.0.rc1/lib/rails/commands.rb:54
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/railties-3.1.0.rc1/lib/rails/commands.rb:49:in `tap'
+/Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/railties-3.1.0.rc1/lib/rails/commands.rb:49
+script/rails:6:in `require'
+script/rails:6
+Rendered boards/show.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (compile error
+/Users/imac20/projects/fb/app/views/boards/show.html.erb:26: syntax error, unexpected kENSURE, expecting kEND
+/Users/imac20/projects/fb/app/views/boards/show.html.erb:28: syntax error, unexpected $end, expecting kEND):
+    23: <%= link_to 'Edit', edit_board_path(@board) %> |
+    24: <%= link_to 'Back', boards_path %>
+  app/views/boards/show.html.erb:28:in `compile'
+  app/controllers/boards_controller.rb:19:in `show'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:44:37 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 5.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:44:37 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:44:37 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:45:33 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 6.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:45:33 +0800 2011
+Served asset /application.css - 304 Not Modified  (3ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:45:33 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:45:36 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 85ms (Views: 72.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:45:36 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:45:36 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:46:11 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (7928.6ms)
+Completed 500 Internal Server Error in 7941ms
+
+ActionView::Template::Error (undefined method `new_board_post_path' for #<#<Class:0x103a6c3f0>:0x103a65960>):
+    27: 
+    28: <br />
+    29: 
+    30: <%= link_to 'New Post', new_board_post_path(@board) %> |
+    31: <%= link_to 'Edit', edit_board_path(@board) %> |
+    32: <%= link_to 'Back', boards_path %>
+  app/views/boards/show.html.erb:30:in `_app_views_boards_show_html_erb__1857378141_2178093200'
+  app/controllers/boards_controller.rb:19:in `show'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.0ms)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:46:19 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:46:19 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 12:46:19 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:46:19 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:46:19 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:46:21 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (6953.4ms)
+Completed 500 Internal Server Error in 6965ms
+
+ActionView::Template::Error (undefined method `new_board_post_path' for #<#<Class:0x1035f4430>:0x1035f1398>):
+    27: 
+    28: <br />
+    29: 
+    30: <%= link_to 'New Post', new_board_post_path(@board) %> |
+    31: <%= link_to 'Edit', edit_board_path(@board) %> |
+    32: <%= link_to 'Back', boards_path %>
+  app/views/boards/show.html.erb:30:in `_app_views_boards_show_html_erb__1857378141_2178093200'
+  app/controllers/boards_controller.rb:19:in `show'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.0ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:46:48 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 19ms (Views: 7.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:46:49 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:46:49 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:47:01 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (8216.9ms)
+Completed 500 Internal Server Error in 8386ms
+
+ActionView::Template::Error (undefined method `new_board_post_path' for #<#<Class:0x103c87338>:0x103c76dd0>):
+    27: 
+    28: <br />
+    29: 
+    30: #<%= link_to 'New Post', new_board_post_path(@board) %> |
+    31: <%= link_to 'Edit', edit_board_path(@board) %> |
+    32: <%= link_to 'Back', boards_path %>
+  app/views/boards/show.html.erb:30:in `_app_views_boards_show_html_erb__1857378141_2179172380'
+  app/controllers/boards_controller.rb:19:in `show'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:49:16 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (8587.2ms)
+Completed 500 Internal Server Error in 8600ms
+
+ActionView::Template::Error (undefined method `new_board_post_path' for #<#<Class:0x10399b110>:0x103994dd8>):
+    27: 
+    28: <br />
+    29: 
+    30: #<%= link_to 'New Post', new_board_post_path(@board) %> |
+    31: <%= link_to 'Edit', edit_board_path(@board) %> |
+    32: <%= link_to 'Back', boards_path %>
+  app/views/boards/show.html.erb:30:in `_app_views_boards_show_html_erb__1857378141_2179172380'
+  app/controllers/boards_controller.rb:19:in `show'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:49:24 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (6814.4ms)
+Completed 500 Internal Server Error in 6827ms
+
+ActionView::Template::Error (undefined method `new_board_post_path' for #<#<Class:0x103960650>:0x10395aa70>):
+    27: 
+    28: <br />
+    29: 
+    30: #<%= link_to 'New Post', new_board_post_path(@board) %> |
+    31: <%= link_to 'Edit', edit_board_path(@board) %> |
+    32: <%= link_to 'Back', boards_path %>
+  app/views/boards/show.html.erb:30:in `_app_views_boards_show_html_erb__1857378141_2179172380'
+  app/controllers/boards_controller.rb:19:in `show'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:50:44 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (7933.5ms)
+Completed 500 Internal Server Error in 8057ms
+
+ActionView::Template::Error (undefined method `new_board_post_path' for #<#<Class:0x103937a98>:0x103933d08>):
+    27: 
+    28: <br />
+    29: 
+    30: #<%= link_to 'New Post', new_board_post_path(@board) %> |
+    31: <%= link_to 'Edit', edit_board_path(@board) %> |
+    32: <%= link_to 'Back', boards_path %>
+  app/views/boards/show.html.erb:30:in `_app_views_boards_show_html_erb__1857378141_2179172380'
+  app/controllers/boards_controller.rb:19:in `show'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:51:07 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (6753.9ms)
+Completed 500 Internal Server Error in 6767ms
+
+ActionView::Template::Error (undefined method `new_board_post_path' for #<#<Class:0x103948208>:0x10393f6a8>):
+    27: 
+    28: <br />
+    29: 
+    30: <%= link_to 'New Post', new_board_post_path(@board) %> |
+    31: <%= link_to 'Edit', edit_board_path(@board) %> |
+    32: <%= link_to 'Back', boards_path %>
+  app/views/boards/show.html.erb:30:in `_app_views_boards_show_html_erb__1857378141_2177492900'
+  app/controllers/boards_controller.rb:19:in `show'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:53:29 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 5.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:53:29 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:53:29 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:53:32 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:53:32 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:53:32 +0800 2011
+Served asset /application.css - 304 Not Modified  (1ms)  (pid 1488)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 12:53:34 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 12:53:36 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:53:43 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:53:43 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:53:43 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1/edit" for 127.0.0.1 at Wed Jul 13 12:53:48 +0800 2011
+  Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered boards/_form.html.erb (4.3ms)
+Rendered boards/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:53:48 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:53:48 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1488)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 12:53:51 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 12:54:37 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (No route matches {:controller=>"posts"}):
+    24: 
+    25: <br /><br /><br />
+    26: 
+    27: <%= link_to 'Listing Posts', posts_path %>
+  app/views/boards/index.html.erb:27:in `_app_views_boards_index_html_erb___1600395046_2178830680'
+  app/controllers/boards_controller.rb:7:in `index'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 12:54:40 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (No route matches {:controller=>"posts"}):
+    24: 
+    25: <br /><br /><br />
+    26: 
+    27: <%= link_to 'Listing Posts', posts_path %>
+  app/views/boards/index.html.erb:27:in `_app_views_boards_index_html_erb___1600395046_2178830680'
+  app/controllers/boards_controller.rb:7:in `index'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/boards/" for 127.0.0.1 at Wed Jul 13 12:54:46 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (No route matches {:controller=>"posts"}):
+    24: 
+    25: <br /><br /><br />
+    26: 
+    27: <%= link_to 'Listing Posts', posts_path %>
+  app/views/boards/index.html.erb:27:in `_app_views_boards_index_html_erb___1600395046_2178830680'
+  app/controllers/boards_controller.rb:7:in `index'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/boards/" for 127.0.0.1 at Wed Jul 13 12:55:41 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (52.2ms)
+Completed 500 Internal Server Error in 138ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x103cee268>:0x103ceaed8>):
+    24: 
+    25: <br /><br /><br />
+    26: 
+    27: <%= link_to 'Listing Posts', posts_path %>
+  app/views/boards/index.html.erb:27:in `_app_views_boards_index_html_erb___1600395046_2179268160'
+  app/controllers/boards_controller.rb:7:in `index'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/boards/" for 127.0.0.1 at Wed Jul 13 12:55:44 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (42.9ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x103c21b28>:0x103c1cd58>):
+    24: 
+    25: <br /><br /><br />
+    26: 
+    27: <%= link_to 'Listing Posts', posts_path %>
+  app/views/boards/index.html.erb:27:in `_app_views_boards_index_html_erb___1600395046_2179268160'
+  app/controllers/boards_controller.rb:7:in `index'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/boards/" for 127.0.0.1 at Wed Jul 13 12:55:47 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (45.9ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x103bf0140>:0x103be6708>):
+    24: 
+    25: <br /><br /><br />
+    26: 
+    27: <%= link_to 'Listing Posts', posts_path %>
+  app/views/boards/index.html.erb:27:in `_app_views_boards_index_html_erb___1600395046_2179268160'
+  app/controllers/boards_controller.rb:7:in `index'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 12:55:51 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (34.3ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x103beeed0>:0x103be65a0>):
+    24: 
+    25: <br /><br /><br />
+    26: 
+    27: <%= link_to 'Listing Posts', posts_path %>
+  app/views/boards/index.html.erb:27:in `_app_views_boards_index_html_erb___1600395046_2179268160'
+  app/controllers/boards_controller.rb:7:in `index'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 12:56:24 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:56:24 +0800 2011
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (2ms)  (pid 1714)
+Compiled ~/projects/fb/app/assets/stylesheets/boards.css.scss  (19ms)  (pid 1714)
+Compiled ~/projects/fb/app/assets/stylesheets/pages.css.scss  (0ms)  (pid 1714)
+Compiled ~/projects/fb/app/assets/stylesheets/posts.css.scss  (0ms)  (pid 1714)
+Compiled ~/projects/fb/app/assets/stylesheets/scaffold.css.scss  (49ms)  (pid 1714)
+Served asset /application.css - 304 Not Modified  (80ms)  (pid 1714)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:56:24 +0800 2011
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (4ms)  (pid 1714)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (2ms)  (pid 1714)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 1714)
+Compiled ~/projects/fb/app/assets/javascripts/boards.js.coffee  (324ms)  (pid 1714)
+Compiled ~/projects/fb/app/assets/javascripts/pages.js.coffee  (260ms)  (pid 1714)
+Compiled ~/projects/fb/app/assets/javascripts/posts.js.coffee  (254ms)  (pid 1714)
+Served asset /application.js - 304 Not Modified  (872ms)  (pid 1714)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 12:56:26 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:56:26 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:56:26 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 12:56:27 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 33ms (Views: 6.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 12:56:27 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 12:56:27 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 12:56:29 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 12:56:33 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 12:59:24 +0800 2011
+  Processing by PostsController#new as HTML
+  Parameters: {"board_id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 15ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post without an ID):
+  app/controllers/posts_controller.rb:25:in `new'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 12:59:40 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:67: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:70: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:86: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 12:59:48 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:67: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:70: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:86: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.7ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 13:00:35 +0800 2011
+  Processing by PostsController#new as HTML
+  Parameters: {"board_id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 15ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post without an ID):
+  app/controllers/posts_controller.rb:25:in `new'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 13:00:37 +0800 2011
+  Processing by PostsController#new as HTML
+  Parameters: {"board_id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post without an ID):
+  app/controllers/posts_controller.rb:25:in `new'
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 13:00:47 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/boards/1/edit" for 127.0.0.1 at Wed Jul 13 13:01:16 +0800 2011
+  Processing by BoardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered boards/_form.html.erb (6.9ms)
+Rendered boards/edit.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:01:16 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:01:16 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 13:01:17 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:01:17 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:01:17 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards/new" for 127.0.0.1 at Wed Jul 13 13:01:20 +0800 2011
+  Processing by BoardsController#new as HTML
+Rendered boards/_form.html.erb (4.5ms)
+Rendered boards/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:01:20 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:01:20 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started POST "/boards" for 127.0.0.1 at Wed Jul 13 13:01:22 +0800 2011
+  Processing by BoardsController#create as HTML
+  Parameters: {"commit"=>"Create Board", "authenticity_token"=>"bFuYAyjIxvensFnd44FQf4iQd+PuDEFujfOJeTQCsro=", "utf8"=>"✓", "board"=>{"name"=>"2"}}
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "boards" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 13 Jul 2011 05:01:22 UTC +00:00], ["name", "2"], ["updated_at", Wed, 13 Jul 2011 05:01:22 UTC +00:00]]
+Redirected to http://localhost:3000/boards/2
+Completed 302 Found in 13ms
+
+
+Started GET "/boards/2" for 127.0.0.1 at Wed Jul 13 13:01:22 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 2
+Rendered boards/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:01:22 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:01:22 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 13:01:24 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:01:24 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:01:24 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards" for 127.0.0.1 at Wed Jul 13 13:03:03 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+Rendered boards/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 69ms (Views: 67.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:03:03 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:03:03 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 13:03:04 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:03:04 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:03:04 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 13:03:06 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 70ms (Views: 5.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:03:07 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:03:07 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards/2" for 127.0.0.1 at Wed Jul 13 13:03:09 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 2
+Rendered boards/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:03:09 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:03:09 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards/2" for 127.0.0.1 at Wed Jul 13 13:03:11 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 2
+Rendered boards/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 85ms (Views: 5.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:03:11 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:03:11 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards/2/posts/new" for 127.0.0.1 at Wed Jul 13 13:03:12 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 13:04:23 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:04:23 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:04:23 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 1714)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 13:04:34 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 13:04:38 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 13:07:07 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/boards/1/posts/" for 127.0.0.1 at Wed Jul 13 13:07:10 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1/posts/1" for 127.0.0.1 at Wed Jul 13 13:07:14 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (70.4ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (77.5ms)
+
+
+Started GET "/boards/1/" for 127.0.0.1 at Wed Jul 13 13:07:19 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 6.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 13:07:19 +0800 2011
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (2ms)  (pid 1796)
+Compiled ~/projects/fb/app/assets/stylesheets/boards.css.scss  (1ms)  (pid 1796)
+Compiled ~/projects/fb/app/assets/stylesheets/pages.css.scss  (1ms)  (pid 1796)
+Compiled ~/projects/fb/app/assets/stylesheets/posts.css.scss  (1ms)  (pid 1796)
+Compiled ~/projects/fb/app/assets/stylesheets/scaffold.css.scss  (9ms)  (pid 1796)
+Served asset /application.css - 304 Not Modified  (24ms)  (pid 1796)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 13:07:19 +0800 2011
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (70ms)  (pid 1796)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (3ms)  (pid 1796)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 1796)
+Compiled ~/projects/fb/app/assets/javascripts/boards.js.coffee  (212ms)  (pid 1796)
+Compiled ~/projects/fb/app/assets/javascripts/pages.js.coffee  (204ms)  (pid 1796)
+Compiled ~/projects/fb/app/assets/javascripts/posts.js.coffee  (203ms)  (pid 1796)
+Served asset /application.js - 304 Not Modified  (707ms)  (pid 1796)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 13:07:21 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.6ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 13:59:08 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.7ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:01:03 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:01:14 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:01:16 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:27:22 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:28:08 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@posts), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:28:11 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@posts), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:28:20 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:30:13 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.5ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:31:43 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:66: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:69: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.5ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:33:01 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.4ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:33:23 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (74.6ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (78.8ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:33:26 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:33:42 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:33:55 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...ost was successfully updated') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:34:42 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@post ), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...ost was successfully updated') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.9ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:34:43 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@post ), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...ost was successfully updated') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:34:44 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@post ), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...ost was successfully updated') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:34:46 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@post ), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...ost was successfully updated') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:34:47 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@post ), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...ost was successfully updated') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:34:47 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@post ), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...ost was successfully updated') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:34:48 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@post ), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...ost was successfully updated') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:84: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:36:05 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...ard_post_path (@board,@post ), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...ost was successfully updated') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:37:27 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:67: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:70: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:87: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (80.1ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (83.6ms)
+
+
+Started GET "/boards/1/posts/2" for 127.0.0.1 at Wed Jul 13 14:42:30 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:67: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:70: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:87: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/boards/1/posts/" for 127.0.0.1 at Wed Jul 13 14:42:33 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:67: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:70: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:87: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/boards/1/" for 127.0.0.1 at Wed Jul 13 14:42:37 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1
+Rendered boards/show.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 82ms (Views: 56.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 14:42:37 +0800 2011
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (2ms)  (pid 2099)
+Compiled ~/projects/fb/app/assets/stylesheets/boards.css.scss  (1ms)  (pid 2099)
+Compiled ~/projects/fb/app/assets/stylesheets/pages.css.scss  (1ms)  (pid 2099)
+Compiled ~/projects/fb/app/assets/stylesheets/posts.css.scss  (1ms)  (pid 2099)
+Compiled ~/projects/fb/app/assets/stylesheets/scaffold.css.scss  (7ms)  (pid 2099)
+Served asset /application.css - 304 Not Modified  (21ms)  (pid 2099)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 14:42:37 +0800 2011
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (3ms)  (pid 2099)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (2ms)  (pid 2099)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 2099)
+Compiled ~/projects/fb/app/assets/javascripts/boards.js.coffee  (209ms)  (pid 2099)
+Compiled ~/projects/fb/app/assets/javascripts/pages.js.coffee  (202ms)  (pid 2099)
+Compiled ~/projects/fb/app/assets/javascripts/posts.js.coffee  (201ms)  (pid 2099)
+Served asset /application.js - 304 Not Modified  (630ms)  (pid 2099)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:42:41 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:67: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:70: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:87: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.4ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:47:15 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:67: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:70: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:87: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/boards/" for 127.0.0.1 at Wed Jul 13 14:47:20 +0800 2011
+  Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Rendered boards/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 14:47:20 +0800 2011
+Compiled ~/projects/fb/app/assets/stylesheets/application.css  (7ms)  (pid 2326)
+Compiled ~/projects/fb/app/assets/stylesheets/boards.css.scss  (2ms)  (pid 2326)
+Compiled ~/projects/fb/app/assets/stylesheets/pages.css.scss  (0ms)  (pid 2326)
+Compiled ~/projects/fb/app/assets/stylesheets/posts.css.scss  (0ms)  (pid 2326)
+Compiled ~/projects/fb/app/assets/stylesheets/scaffold.css.scss  (7ms)  (pid 2326)
+Served asset /application.css - 304 Not Modified  (24ms)  (pid 2326)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 14:47:20 +0800 2011
+Compiled ~/projects/fb/app/assets/javascripts/application.js  (5ms)  (pid 2326)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (3ms)  (pid 2326)
+Compiled ~/.rvm/gems/ruby-1.8.7-p334/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 2326)
+Compiled ~/projects/fb/app/assets/javascripts/boards.js.coffee  (241ms)  (pid 2326)
+Compiled ~/projects/fb/app/assets/javascripts/pages.js.coffee  (221ms)  (pid 2326)
+Compiled ~/projects/fb/app/assets/javascripts/posts.js.coffee  (228ms)  (pid 2326)
+Served asset /application.js - 304 Not Modified  (712ms)  (pid 2326)
+
+
+Started GET "/boards/1" for 127.0.0.1 at Wed Jul 13 14:47:23 +0800 2011
+  Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."board_id" = 1[0m
+Rendered boards/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 31ms (Views: 6.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at Wed Jul 13 14:47:23 +0800 2011
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 2326)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at Wed Jul 13 14:47:23 +0800 2011
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 2326)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:47:24 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:64: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:67: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:70: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:87: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/boards/1/posts/new" for 127.0.0.1 at Wed Jul 13 14:48:00 +0800 2011
+
+SyntaxError (/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ',', expecting ')'
+...oard_post_path (@board,@post), :notice => 'Post was successf...
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:63: syntax error, unexpected ')', expecting '}'
+...st was successfully updated.') }
+                              ^
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:65: syntax error, unexpected kELSE, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:68: syntax error, unexpected kEND, expecting '}'
+/Users/imac20/projects/fb/app/controllers/posts_controller.rb:85: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/imac20/.rvm/gems/ruby-1.8.7-p334/gems/actionpack-3.1.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
