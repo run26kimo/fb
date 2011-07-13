@@ -22,7 +22,7 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @board = Board.find(params[:board_id])
-    @post = @board.posts.find(params[:id])
+    @post = @board.posts.build
     
     respond_to do |format|
       format.html # new.html.erb
@@ -60,7 +60,7 @@ class PostsController < ApplicationController
     
     respond_to do |format|
       if @post.update_attributes(params[:post])
-        format.html { redirect_to(board_post_path (@board,@post), :notice => 'Post was successfully updated.') }
+        format.html { redirect_to(board_post_path(@board,@post), :notice => 'Post was successfully updated.') }
         format.json { head :ok }
       else
         format.html { render :action => "edit" }
